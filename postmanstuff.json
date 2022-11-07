@@ -1,0 +1,1271 @@
+{
+    "meta": {
+        "count": 5,
+        "links": {
+            "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=SYD&destinationLocationCode=BKK&departureDate=2022-11-01&returnDate=2022-11-18&adults=2&max=5"
+        }
+    },
+    "data": [
+        {
+            "type": "flight-offer",
+            "id": "1",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "lastTicketingDate": "2022-11-01",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT16H55M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-01T22:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T05:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "138",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H40M",
+                            "id": "3",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T09:10:00"
+                            },
+                            "arrival": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-02T11:15:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "619",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT3H5M",
+                            "id": "4",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                     ]
+                },
+                {
+                    "duration": "PT14H20M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-18T13:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T17:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "614",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT2H55M",
+                            "id": "5",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T19:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-19T07:25:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "111",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H5M",
+                            "id": "6",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "1933.88",
+                "base": "792.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "1933.88"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "CX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "5",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "6",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "travelerId": "2",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "5",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "6",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "2",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "lastTicketingDate": "2022-11-01",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT16H55M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-01T22:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T05:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "138",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H40M",
+                            "id": "3",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T09:10:00"
+                            },
+                            "arrival": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-02T11:15:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "619",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT3H5M",
+                            "id": "4",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                },
+                {
+                    "duration": "PT14H30M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-18T15:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T18:55:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "654",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT2H50M",
+                            "id": "7",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T21:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-19T09:35:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "161",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H15M",
+                            "id": "8",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "1933.88",
+                "base": "792.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "1933.88"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "CX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "7",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "8",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "travelerId": "2",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "7",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "8",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "3",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "lastTicketingDate": "2022-11-01",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT17H45M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-01T22:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T05:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "138",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H40M",
+                            "id": "1",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T09:55:00"
+                            },
+                            "arrival": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-02T12:05:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "615",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT3H10M",
+                            "id": "2",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                },
+                {
+                    "duration": "PT14H20M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-18T13:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T17:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "614",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT2H55M",
+                            "id": "5",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T19:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-19T07:25:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "111",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H5M",
+                            "id": "6",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "1933.88",
+                "base": "792.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "1933.88"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "CX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "1",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "2",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "5",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "6",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "travelerId": "2",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "1",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "2",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "5",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "6",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "4",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "lastTicketingDate": "2022-11-01",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT17H45M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-01T22:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T05:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "138",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H40M",
+                            "id": "1",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T09:55:00"
+                            },
+                            "arrival": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-02T12:05:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "615",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT3H10M",
+                            "id": "2",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                },
+                {
+                    "duration": "PT14H30M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-18T15:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T18:55:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "654",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT2H50M",
+                            "id": "7",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T21:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-19T09:35:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "161",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H15M",
+                            "id": "8",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "1933.88",
+                "base": "792.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "1933.88"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "CX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "1",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "2",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "7",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "8",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "travelerId": "2",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "1",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "2",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "7",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "8",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "5",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "lastTicketingDate": "2022-11-01",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT16H55M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-01T22:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T05:00:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "138",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H40M",
+                            "id": "3",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-02T09:10:00"
+                            },
+                            "arrival": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-02T11:15:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "619",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT3H5M",
+                            "id": "4",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                },
+                {
+                    "duration": "PT15H45M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "BKK",
+                                "at": "2022-11-18T11:40:00"
+                            },
+                            "arrival": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T15:30:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "750",
+                            "aircraft": {
+                                "code": "333"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT2H50M",
+                            "id": "9",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        },
+                        {
+                            "departure": {
+                                "iataCode": "HKG",
+                                "terminal": "1",
+                                "at": "2022-11-18T19:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "SYD",
+                                "terminal": "1",
+                                "at": "2022-11-19T07:25:00"
+                            },
+                            "carrierCode": "CX",
+                            "number": "111",
+                            "aircraft": {
+                                "code": "359"
+                            },
+                            "operating": {
+                                "carrierCode": "CX"
+                            },
+                            "duration": "PT9H5M",
+                            "id": "10",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "1933.88",
+                "base": "792.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "1933.88"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "CX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "9",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "10",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "travelerId": "2",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "966.94",
+                        "base": "396.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "KR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "K",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "9",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        },
+                        {
+                            "segmentId": "10",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "NR21AUIR",
+                            "brandedFare": "ECONLIGHT",
+                            "class": "N",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "dictionaries": {
+        "locations": {
+            "BKK": {
+                "cityCode": "BKK",
+                "countryCode": "TH"
+            },
+            "HKG": {
+                "cityCode": "HKG",
+                "countryCode": "HK"
+            },
+            "SYD": {
+                "cityCode": "SYD",
+                "countryCode": "AU"
+            }
+        },
+        "aircraft": {
+            "333": "AIRBUS A330-300",
+            "359": "AIRBUS A350-900"
+        },
+        "currencies": {
+            "EUR": "EURO"
+        },
+        "carriers": {
+            "CX": "CATHAY PACIFIC"
+        }
+    }
+}
